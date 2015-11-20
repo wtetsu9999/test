@@ -11,7 +11,7 @@ install:
   - unzip dmd.${DMD_VERSION}.zip
 
 script:
-  - DMD=./dmd2/linux/bin64/dmd MODEL=64 make -f posix.mak unittest
+  - ./dmd2/linux/bin64/dmd src/a.d -unittest
 
 branches:
   only:
